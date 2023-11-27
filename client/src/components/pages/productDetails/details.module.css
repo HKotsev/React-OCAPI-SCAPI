@@ -1,0 +1,16 @@
+.color-variations {
+  display: flex;
+  gap: 1rem;
+}
+.color-variations span {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0.85;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.color-variations span:hover {
+  opacity: 1;
+}

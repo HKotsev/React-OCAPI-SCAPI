@@ -1,0 +1,65 @@
+.image {
+  max-width: 25rem;
+}
+.image img {
+  width: 100%;
+}
+.displayedImage {
+  position: relative;
+}
+.displayedImage button {
+  border: none;
+
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background-color: #242424;
+}
+.displayedImage button:hover {
+  background-color: rgb(24, 24, 24, 0.5);
+}
+.displayedImage .btnLeft {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+.displayedImage .btnRight {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.imagesContainer {
+  display: flex;
+}
+.dots {
+  width: 6rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: auto;
+}
+.dots::-webkit-scrollbar {
+  width: 8px;
+}
+.dots::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+.dots img {
+  width: 5rem;
+}
+.active {
+  transform: scale(1.1);
+  outline: auto;
+}
